@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 .navbar {
   padding: 20px;
   width: 100%;
@@ -19,6 +21,12 @@
   font-weight: 400;
   border-radius: 3px;
   font-size: 15px;
+}
+
+.search_input::placeholder {
+  font-weight: 100;
+  color: green;
+  font-family: "Poppins", sans-serif;
 }
 
 .search_button {
@@ -68,6 +76,7 @@
   margin-left: 20px;
   margin-right: 20px;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar_bottom h2:hover {
