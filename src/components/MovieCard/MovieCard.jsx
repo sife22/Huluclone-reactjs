@@ -24,7 +24,10 @@ function MovieCard({ movie }) {
         truncateText="..."
         text={movie.title}
       />
-      <p className="movie_date">{movie.release_date}</p>
+      <div className="div_date_vote">
+        <p className="date_vote">{movie.release_date}</p>
+        <p className="date_vote">{movie.vote_average} / 10</p>
+      </div>
     </div>
   );
 }

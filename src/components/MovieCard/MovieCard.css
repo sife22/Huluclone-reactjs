@@ -29,17 +29,22 @@
   margin-top: 3px;
 }
 
-.movie_date {
+.date_vote {
   display: none;
 }
 
-.movie_card:hover .movie_date {
+.movie_card:hover .date_vote {
   display: inline;
 }
 
 /* .movie_card:hover .movie_overview {
   display: inline;
 } */
+
+.div_date_vote {
+  display: flex;
+  justify-content: space-between;
+}
 
 .movie_title:hover {
   overflow: visible;
