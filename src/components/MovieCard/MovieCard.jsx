@@ -4,11 +4,18 @@ import TextTruncate from "react-text-truncate";
 
 function MovieCard({ movie }) {
   const base_url_img = "https://image.tmdb.org/t/p/original/";
+  const openImage = () => {
+    const image = document.getElementById("img");
+    const source = image.src;
+    window.open(source);
+  };
   return (
     <div className="movie_card">
       <img
         src={`${base_url_img}${movie.poster_path || movie.backdrop_path}`}
         alt=""
+        id="img"
+        onClick={openImage}
       />
       <TextTruncate
         line={1}
